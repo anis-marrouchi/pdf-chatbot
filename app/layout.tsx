@@ -43,10 +43,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
       >
         <Toaster />
         <Providers attribute="class" defaultTheme="system" enableSystem>
-          <div className="flex min-h-screen flex-col">
+          <div className="flex flex-col min-h-screen">
             {/* @ts-ignore */}
             <Header />
-            <main className="flex flex-1 flex-col bg-muted/50">{children}</main>
+            <main className="flex flex-col flex-1 bg-muted/50">{children}</main>
           </div>
           <TailwindIndicator />
         </Providers>
