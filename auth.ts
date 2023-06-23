@@ -1,5 +1,5 @@
 import NextAuth from 'next-auth'
-import GitHub from 'next-auth/providers'
+import GitHub from 'next-auth/providers/github'
 
 declare module 'next-auth' {
   interface Session {
