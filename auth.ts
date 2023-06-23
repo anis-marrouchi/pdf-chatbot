@@ -24,15 +24,15 @@ export const {
             username: {
               label: 'Username',
               type: 'text',
-              placeholder: 'jsmith'
+              placeholder: 'your-username'
             },
             password: { label: 'Password', type: 'password' }
           },
           async authorize(credentials) {
             return {
               id: 1,
-              name: 'J Smith',
-              email: 'jsmith@example.com',
+              name: 'John Doe',
+              email: 'johndoe@example.com',
               picture: 'https://i.pravatar.cc/150?u=jsmith@example.com'
             } as any
           }
